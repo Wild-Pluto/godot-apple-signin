@@ -1,2 +1,2 @@
-void register_apple_id_types();
-void unregister_apple_id_types();
+void register_godot_apple_id_types();
+void unregister_godot_apple_id_types();

@@ -11,7 +11,7 @@
 #include "register_types.h"
 #include "GodotAppleId.h"
 
-void register_apple_id_types() {
+void register_godot_apple_id_types() {
 #if VERSION_MAJOR == 3
     Engine::get_singleton()->add_singleton(Engine::Singleton("GodotAppleId", memnew(GodotAppleId)));
 #else
@@ -19,5 +19,5 @@ void register_apple_id_types() {
 #endif
 }
 
-void unregister_apple_id_types() {
+void unregister_godot_apple_id_types() {
 }

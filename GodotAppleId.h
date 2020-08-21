@@ -11,10 +11,10 @@ class GodotAppleId : public Reference {
 #else
     OBJ_TYPE(GodotAppleId, Reference);
 #endif
-    
-    static int _callback_id;
 
 protected:
+    static int _callback_id;
+    
     static void _bind_methods();
     static void _send_result_to_engine(const char *result, bool error, const String &succes_hook, const String &error_hook);
 

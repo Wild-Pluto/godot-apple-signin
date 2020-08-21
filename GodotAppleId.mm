@@ -9,6 +9,8 @@
 #define CLASS_DB ObjectTypeDB
 #endif
 
+int GodotAppleId::_callback_id = 0;
+
 GodotAppleId::GodotAppleId() {
 }
 
@@ -73,6 +75,7 @@ void GodotAppleId::_send_result_to_engine(const char *result, bool error, const 
 }
 
 void GodotAppleId::_bind_methods() {
+    CLASS_DB::bind_method("set_callback_id", &GodotAppleId::set_callback_id);
     CLASS_DB::bind_method("is_current_platform_supported", &GodotAppleId::is_current_platform_supported);
     CLASS_DB::bind_method("login", &GodotAppleId::login);
     CLASS_DB::bind_method("quick_login", &GodotAppleId::quick_login);
