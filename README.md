@@ -1,7 +1,10 @@
+Code of this module based on [apple-signin-unity
+](https://github.com/lupidan/apple-signin-unity)
+
 # Example of use
 
 ```gdscript
-extends Node2D
+extends Node
 
 enum {
 	FULL_NAME = 1 << 0,
@@ -26,3 +29,10 @@ func _apple_id_get_credential_success(result):
 func _apple_id_get_credential_error(result):
 	print_debug(result)
 ```
+
+# Requirements
+
+- UiKit.framework
+- Foundation.framework
+- AuthenticationServices.framework
+- Sign in with Apple capability
