@@ -109,17 +109,17 @@
         return nil;
     
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
-    [result setValue:[[appleIDCredential identityToken] base64EncodedStringWithOptions:0] forKey:@"identityToken"];
-    [result setValue:[[appleIDCredential authorizationCode] base64EncodedStringWithOptions:0] forKey:@"authorizationCode"];
+    [result setValue:[[appleIDCredential identityToken] base64EncodedStringWithOptions:0] forKey:@"identity_token"];
+    [result setValue:[[appleIDCredential authorizationCode] base64EncodedStringWithOptions:0] forKey:@"authorization_code"];
     [result setValue:[appleIDCredential state] forKey:@"state"];
     [result setValue:[appleIDCredential user] forKey:@"user"];
-    [result setValue:[appleIDCredential authorizedScopes] forKey:@"authorizedScopes"];
+    [result setValue:[appleIDCredential authorizedScopes] forKey:@"authorized_scopes"];
     [result setValue:[appleIDCredential email] forKey:@"email"];
-    [result setValue:@([appleIDCredential realUserStatus]) forKey:@"realUserStatus"];
+    [result setValue:@([appleIDCredential realUserStatus]) forKey:@"real_user_status"];
     
     NSDictionary *fullNameDictionary = [AppleAuthSerializer dictionaryForNSPersonNameComponents:[appleIDCredential fullName]];
-    [result setValue:@(fullNameDictionary != nil) forKey:@"hasFullName"];
-    [result setValue:fullNameDictionary forKey:@"fullName"];
+    [result setValue:@(fullNameDictionary != nil) forKey:@"has_full_name"];
+    [result setValue:fullNameDictionary forKey:@"full_name"];
     
     return [result copy];
 }
