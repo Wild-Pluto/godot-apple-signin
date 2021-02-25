@@ -8,7 +8,7 @@ deinitialization="godot_apple_signin_deinit"
 [dependencies]
 linked=[]
 embedded=[]
-system=[]
+system=["Foundation.framework", "UiKit.framework", "AuthenticationServices.framework"]
 
 capabilities=[]
 
