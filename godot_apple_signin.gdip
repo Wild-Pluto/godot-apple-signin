@@ -1,0 +1,17 @@
+[config]
+name="GodotAppleSignIn"
+binary="libgodot_apple_signin.a"
+
+initialization="godot_apple_signin_init"
+deinitialization="godot_apple_signin_deinit"
+
+[dependencies]
+linked=[]
+embedded=[]
+system=[]
+
+capabilities=[]
+
+files=[]
+
+[plist]
