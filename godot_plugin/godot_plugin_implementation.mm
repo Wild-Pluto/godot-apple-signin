@@ -18,7 +18,7 @@ void GodotAppleSignIn::_bind_methods() {
 }
 
 bool GodotAppleSignIn::is_current_platform_supported() {
-    if (@available(iOS 13.0, tvOS 13.0, macOS 10.15, *)) {
+    if (@available(iOS 13.0, *)) {
         return true;
     }
     
