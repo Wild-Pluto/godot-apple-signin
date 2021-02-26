@@ -16,7 +16,7 @@ class GodotAppleSignIn : public Object {
 public:
     
     bool is_current_platform_supported();
-    void login(int options, const Variant &nonce);
+    void login(bool withEmail, bool withName, const Variant &nonce);
     void quick_login(const Variant &nonce);
     void get_credential_state(const String user_id);
     

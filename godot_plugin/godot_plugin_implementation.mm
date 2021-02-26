@@ -25,7 +25,17 @@ bool GodotAppleSignIn::is_current_platform_supported() {
     return false;
 }
 
-void GodotAppleSignIn::login(int options, const Variant &c_nonce) {
+void GodotAppleSignIn::login(bool withEmail, bool withName, const Variant &c_nonce) {
+    AppleAuthManagerLoginOptions options = 0;
+    
+    if (withName) {
+        options |= AppleAuthManagerIncludeName;
+    }
+    
+    if (withEmail) {
+        options |= AppleAuthManagerIncludeEmail;
+    }
+    
     NSString *nonce = !c_nonce.is_zero() ? [NSString stringWithCString:String(c_nonce).utf8().get_data() encoding:NSUTF8StringEncoding] : nil;
     [[AppleAuthManager sharedManager] loginWithAppleId:^(const char *result, bool error) {
         GodotAppleSignIn::_send_result_to_engine(result, error, SIGNAL_LOGIN_SUCCESS, SIGNAL_LOGIN_ERROR);
