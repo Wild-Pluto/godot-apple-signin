@@ -64,7 +64,7 @@ func _on_credential_error(result):
 
 ## Requirements
 
-- Sign in with Apple capability
+Sign in with Apple capability
 
 ---
 For Godot less than v3.2.4 use [3.x](https://github.com/Wild-Pluto/godot-apple-signin/tree/3.x) branch
