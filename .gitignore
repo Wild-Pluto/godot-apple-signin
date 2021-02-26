@@ -10,3 +10,6 @@ data_*/
 *.d
 *.o
 __pycache__
+*.a
+*.xcuserstate
+godot_apple_signin.xcodeproj/xcuserdata/*
