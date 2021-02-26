@@ -44,7 +44,7 @@ func _ready():
 	for i in 32:
 		key.append(randi() % 256)
 		
-	var nonce := key.hex_encode()
+	var nonce := key.hex_encode().sha256_text()
 	
 #	with email and name
 	apple_sign_in.login(true, true, nonce)
