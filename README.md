@@ -3,7 +3,7 @@ Code of this module based on [apple-signin-unity](https://github.com/lupidan/app
 For Godot version less than 3.2.4 use [3.x](https://github.com/Wild-Pluto/godot-apple-signin/tree/3.x) branch
 
 ## Installation
-[Download](https://github.com/Wild-Pluto/godot-apple-signin/releases/download/2.0.0-rc.3/Prebuilt.plugin.for.Godot.v3.2.4-rc.3.zip) plugin and unzip it to ios/plugins directory of the project
+[Download](https://github.com/Wild-Pluto/godot-apple-signin/releases/download/2.0.0/Prebuilt.plugin.for.Godot.v3.3.zip) plugin and unzip it to ios/plugins directory of the project
 
 ## Methods
 
