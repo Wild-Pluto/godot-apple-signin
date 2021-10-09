@@ -13,3 +13,5 @@ __pycache__
 *.a
 *.xcuserstate
 godot_apple_signin.xcodeproj/xcuserdata/*
+.idea
+.sconsign.dblite

@@ -69,3 +69,9 @@ func _on_credential_error(result):
 ## Requirements
 
 Sign in with Apple capability
+
+## Build from source
+
+Just run
+`scripts/build.sh -v 3.3.4-stable` where -v is desired Godot version. Binaries were placed in bin directory and ready to
+use plugin archive in dist directory
