@@ -12,6 +12,7 @@ do
     esac
 done
 cd ./godot || exit
+git pull
 git checkout "$version"
 ./../scripts/timeout.sh scons platform=iphone target=debug --jobs=$(sysctl -n hw.logicalcpu)
 cd ../
